@@ -1,0 +1,430 @@
+.section-p1 {
+    padding: 40px 500px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+.section-p2 {
+    padding: 40px 80px;
+}
+
+body {
+    width: 100%;
+}
+
+
+/* header */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #c48424;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 50px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: bisque;
+}
+
+#navbar li a.active::after, 
+#navbar li a:hover::after {
+    content:"";
+    width: 30%;
+    height: 2px;
+    background-color: bisque;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/* home page */
+#hp1 {
+    position: relative;
+    background-image: url("wsimages/c2.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(97, 97, 97, 0.945);
+    background-blend-mode: lighten;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hp1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+ 
+
+#hp1 h1 {
+    position: center;
+    z-index: 1;
+    color: rgb(0, 0, 0);
+    font-size: 100px;
+    text-align: center;
+    border: 10px solid rgb(0, 0, 0); 
+    height: 25%; 
+    box-sizing: border-box; 
+    padding: 5rem; 
+}
+
+#hp1 p {
+    position: relative;
+    z-index: 0;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    text-align: center;
+}
+
+#bestsell {
+    padding: 20px 80px;
+    background: #c48424;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+#bestsell h1 {
+    position: center;
+    z-index: 1;
+    color: rgb(0, 0, 0);
+    font-size: 75px;
+    text-align: center;
+    border: 10px solid rgb(0, 0, 0); 
+    height: 10%; 
+    box-sizing: border-box;
+}
+
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+#feature .fe-box{
+    width: 300px;
+    text-align: center;
+    padding: 20px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 15px;
+}
+
+#intro p {
+    position: relative;
+    height: 200px;
+    z-index: 0;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    text-align: center;
+    align-items: center;
+    background-color: #c48424;
+}
+
+#login-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("wsimages/i_love_coffee_2-wallpaper-3360x1050.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: lighten ;
+    height: 700px;
+    width: flex;
+    object-fit: cover;
+}
+
+#login-form h4 {
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    padding: 0 800px 0 20px;
+}
+
+#login-form p {
+    font-size: 25px;
+    font-weight: 600;
+    color: #c48424;
+    padding: 0 800px 0 20px;
+}
+
+#login-form .form{
+    display: flex;
+    width: 40%;
+}
+
+#login-form input {
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#login-form button {
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    background-color: rgb(2, 70, 134);
+    color: aliceblue;
+    white-space: nowrap;
+}
+
+
+/* about page */
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#aboutus {
+    padding: 20px 80px;
+    background: #e9a641;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+#aboutus h1 {
+    position: center;
+    z-index: 1;
+    color: rgb(0, 0, 0);
+    font-size: 75px;
+    text-align: center;
+    border: 10px solid rgb(0, 0, 0); 
+    height: 10%; 
+    box-sizing: border-box;
+}
+
+#ab1 {
+    position: relative;
+    background-image: url("wsimages/baking-substitutions-cheat-sheet-FT-BLOG0420-6dc601bb302248238562ac7326fa5746.jpg");
+    height: 50vh;
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(97, 97, 97, 0.945);
+    background-blend-mode: lighten;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+#intro1 p {
+    position: center;
+    z-index: 0;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    text-align: center;
+    padding: 0 550px;
+    background-color: #c48424;
+}
+
+#ab2 {
+    position: relative;
+    background-image: url("wsimages/baking-1024x683.jpg");
+    height: 50vh;
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(97, 97, 97, 0.945);
+    background-blend-mode: lighten;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+#intro2 p {
+    position: center;
+    z-index: 0;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    text-align: center;
+    padding: 0 550px;
+    background-color: #c48424;
+}
+
+
+
+/* contact page */
+
+
+/* menu */
+
+#menu {
+    padding: 20px 80px;
+    background: #e9a641;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+#menu h1 {
+    position: center;
+    z-index: 1;
+    color: rgb(0, 0, 0);
+    font-size: 75px;
+    text-align: center;
+    border: 10px solid rgb(0, 0, 0); 
+    height: 10%; 
+    box-sizing: border-box;
+}
+
+#products {
+    text-align: center;
+}
+
+#product .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#products .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#products .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+#products .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#products img[src="wsimages/Korean-Cream-Cheese-Garlic-Bread-FEATURE-10.jpeg"] {
+    width: 250px;
+    height: 300px;
+}
+
+#products img[src="wsimages/Southern-Living-Homemade_Brownies_023-3c582f0fba1842dd918a3d9c26c1ab59.jpg"] {
+    width: 250px;
+    height: 300px;
+}
+
+#products img[src="wsimages/classic-chocolate-chip-cookies.jpg"] {
+    width: 250px;
+    height: 300px;
+}
+
+#products img[src="wsimages/Latte.jpg"] {
+    width: 250px;
+    height: 300px;
+}
+
+#products img[src="wsimages/Americano.jpg"] {
+    width: 250px;
+    height: 300px;
+}
+
+#products img[src="wsimages/Dalgona.jpg"] {
+    width: 250px;
+    height: 300px;
+}
+
+#products .pro .des{
+    text-align: start;
+    padding: 10px 0;
+
+}
+
+#products .pro .des h5{
+    padding-top: 7px;
+    font-size: 20px;
+    color: #1a1a1a;
+ }
+
+#products .pro .des i{
+   font-size: 12px;
+   color: rgb(243, 181, 25)
+}
+
+#products .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(20, 117, 117);
+}
+
+#products .pro .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: rgb(90, 121, 221);
+    border-color: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    
+}
+
+/* single products */
+
+#products .singleproduct-img {
+    width: 40%;
+    margin-right: 50px;
+}
+
+
+/* cart page */
